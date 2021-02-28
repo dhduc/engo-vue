@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>review.html</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+    <!-- browsers not supporting CSS variables -->
+    <script>
+        if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {
+            var cfStyle = document.getElementById('codyframe');
+            if (cfStyle) {
+                var href = cfStyle.getAttribute('href');
+                href = href.replace('style.css', 'style-fallback.css');
+                cfStyle.setAttribute('href', href);
+            }
+            document.getElementsByTagName("html")[0].className += " ie";
+        }
+    </script>
+    <script src="assets/js/dark-mode.js"></script>
+</head>
+<body>
+<div class="app-ui js-app-ui">
+    <!-- header -->
+
+    <!-- navigation -->
+
+    <!-- main content -->
+    <section class="position-relative z-index-1 padding-y-xxl">
+        <div class="container max-width-adaptive-sm">
+            <div class="text-component text-center margin-bottom-xxl">
+                <h1>Cards Scrolling Effect v1</h1>
+                <p>👇 Scroll down to see the effect</p>
+            </div>
+
+            <ul class="grid gap-sm">
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center">
+                            <span class="font-bold text-xxl">Word</span>
+                            <div class="margin-md">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center"><span class="font-bold text-xxl">2</span></div>
+                    </div>
+                </li>
+
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center"><span class="font-bold text-xxl">3</span></div>
+                    </div>
+                </li>
+
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center"><span class="font-bold text-xxl">4</span></div>
+                    </div>
+                </li>
+
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center"><span class="font-bold text-xxl">5</span></div>
+                    </div>
+                </li>
+
+                <li class="perspective-xl">
+                    <div class="aspect-ratio-16:9 bg radius-lg shadow-md scroll-fx js-scroll-fx"
+                         data-scroll-fx-1="rotateX, 45deg, 0deg, 0%, 50%"
+                         data-scroll-fx-2="rotateY, 15deg, 0deg, 0%, 50%">
+                        <div class="flex flex-center"><span class="font-bold text-xxl">6</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+<script src="assets/js/scripts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

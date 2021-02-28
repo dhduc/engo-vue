@@ -1,0 +1,50 @@
+body.create {
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 767px) {
+        .card-body {
+            padding: 5px;
+        }
+    }
+}
+
+#create {
+    .el-form-item__label {
+        text-transform: none;
+    }
+    .el-button {
+        margin: 0 20px 20px 0;
+        font-size: 1em;
+    }
+    .button-new-tag {
+        margin: 10px;
+    }
+    .input-new-tag {
+        width: 200px;
+        margin-left: 10px;
+        vertical-align: bottom;
+    }
+    .input-text {
+        width: 500px;
+        margin-right: 10px;
+    }
+    .create label {
+        text-transform: none;
+    }
+    .create .el-form-item__label {
+        font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    // Mobile
+    @media (max-width: 767px) {
+        .button-new-tag {
+            margin-left: 0px;
+        }
+    }
+}

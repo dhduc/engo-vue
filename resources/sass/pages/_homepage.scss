@@ -1,0 +1,136 @@
+.bg-lighter {
+    background: #fafafa !important;
+}
+
+.screen-promo {
+    background-color: #f5f7f9;
+    border: 1px solid #e6ecf1;
+    padding: 0.5rem;
+    border-radius: .25rem;
+}
+
+@media (min-width: 768px) {
+    .screen-promo {
+        .d-promo {
+            display: block;
+        }
+        .m-promo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .screen-promo {
+        .d-promo {
+            display: none;
+        }
+        .m-promo {
+            display: none;
+        }
+    }
+}
+
+.promo {
+    position: relative;
+
+    .video-banner-icon-play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 2.5em;
+        height: 2.5em;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1.0);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(1.0);
+        -ms-transform: translateX(-50%) translateY(-50%) scale(1.0);
+        -o-transform: translateX(-50%) translateY(-50%) scale(1.0);
+        transform: translateX(-50%) translateY(-50%) scale(1.0);
+        -webkit-transition: all 0.2s ease-out 0.05s;
+        transition: all 0.2s ease-out 0.05s;
+        &:hover {
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            -moz-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            -ms-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            -o-transform: translateX(-50%) translateY(-50%) scale(1.2);
+            transform: translateX(-50%) translateY(-50%) scale(1.2);
+        }
+    }
+
+    @media (min-width: 641px) {
+        .video-banner-icon-play {
+            width: 4.5em;
+            height: 4.5em;
+        }
+    }
+}
+
+.screen {
+    .owl-carousel .owl-item img {
+        width: 70%;
+    }
+    .marvel-device.macbook {
+        height: auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+    .marvel-device.macbook:before {
+        background: #f8f9fe;
+        border-radius: 15px;
+    }
+    .marvel-device .screen {
+        box-shadow: 0 0 0 3px #adb5bd;
+    }
+}
+
+@media (max-width: 768px) {
+    .screen, .d-only {
+        display: none;
+    }
+}
+
+.animate-button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #2dce89;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.animate-button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #2dce89;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.animate-button:hover::after, .animate-button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}

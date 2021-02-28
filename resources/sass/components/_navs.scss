@@ -1,0 +1,32 @@
+.tab-content {
+    padding-top: 20px;
+}
+
+.search .input-group {
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.navbar-guest {
+    .brand {
+        font-size: 1.5rem;
+        line-height: 31px;
+    }
+}
+
+.navbar-auth {
+    .brand {
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-horizontal .navbar-collapse {
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-horizontal .navbar-nav .nav-link {
+        color: white !important;
+    }
+}

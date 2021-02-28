@@ -1,0 +1,63 @@
+body.match {
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 767px) {
+        .card-header {
+            padding: 5px;
+        }
+        .card-body {
+            padding: 5px;
+        }
+    }
+}
+
+#match {
+    .el-header {
+        padding: 0;
+    }
+    .box {
+        width: 20%;
+        float: left;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .card {
+        border-width: 2px;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card.source {
+        border-color: #172b4d;
+    }
+
+    .card.target {
+        border-color: #5e72e4;
+    }
+
+    .card.over {
+        background: #5e72e4;
+        color: white;
+        .text {
+            color: white !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+    }
+
+    @media (max-width: 767px) {
+        .box {
+            width: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}

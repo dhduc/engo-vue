@@ -1,0 +1,22 @@
+/* -------------------------------- 
+
+File#: _2_notifications-popover
+Title: Notifications Popover
+Descr: A popover containing a list of notification items
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.notif-popover {
+  --popover-width: 280px;
+
+  .notif {
+    --notif-figure-size: 40px;
+  }
+}
+
+@include breakpoint(md) {
+  .notif-popover {
+    --popover-width: 360px;
+  }
+}

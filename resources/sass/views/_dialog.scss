@@ -1,0 +1,24 @@
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .eg-dialog .el-dialog {
+    width: 90% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .eg-dialog .el-dialog {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .eg-dialog .el-dialog {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .eg-dialog .el-dialog {
+    width: 40% !important;
+  }
+}

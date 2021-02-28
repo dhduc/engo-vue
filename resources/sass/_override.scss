@@ -1,0 +1,18 @@
+.app-wrapper {
+    .el-dialog__title {
+        font-size: 1.5rem;
+    }
+    .el-dialog__footer {
+        text-align: left;
+    }
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mobile-only {
+        display: block;
+    }
+}

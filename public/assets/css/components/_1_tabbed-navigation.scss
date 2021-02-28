@@ -1,0 +1,59 @@
+/* -------------------------------- 
+
+File#: _1_tabbed-navigation
+Title: Tabbed Navigation
+Descr: Tabbed secondary navigation
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+:root {
+  --s-tabs-border-bottom-width: 1px;
+  --s-tabs-selected-item-border-bottom-width: 1px;
+}
+
+.s-tabs {
+  position: relative;
+  z-index: 1;
+}
+
+.s-tabs__list {
+  display: flex;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto;
+
+  &::after { // border bottom
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--s-tabs-border-bottom-width);
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-contrast-low);
+  }
+
+  li {
+    margin-right: var(--space-sm);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: var(--space-xs);
+    white-space: nowrap;
+    border-bottom: var(--s-tabs-selected-item-border-bottom-width) solid transparent;
+    z-index: 1;
+    transition: .2s;
+
+    &.s-tabs__link--current {
+      position: relative;
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

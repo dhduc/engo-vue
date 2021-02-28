@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>practice.html</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+    <!-- browsers not supporting CSS variables -->
+    <script>
+        if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {
+            var cfStyle = document.getElementById('codyframe');
+            if (cfStyle) {
+                var href = cfStyle.getAttribute('href');
+                href = href.replace('style.css', 'style-fallback.css');
+                cfStyle.setAttribute('href', href);
+            }
+            document.getElementsByTagName("html")[0].className += " ie";
+        }
+    </script>
+    <script src="assets/js/dark-mode.js"></script>
+</head>
+<body>
+<div class="app-ui js-app-ui">
+    <!-- header -->
+
+    <!-- navigation -->
+
+    <!-- main content -->
+    <div class="grid gap-sm">
+        <div class="col-6@md">
+            <div id="app1" class="stats-card bg radius-md padding-md shadow-xs">
+                <div class="main-content fullscreen"><!---->
+                    <div class="progress">
+                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                             class="progress-bar bg-primary" style="width: 0%;"></div>
+                    </div>
+                    <div class=""><!---->
+                        <div class="row listen">
+                            <div class="card text-center">
+                                <div class="card-header"><span title="Phát âm"
+                                                               class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                                        class="fas fa-volume-up"></i></span></div>
+                                <div class="card-body"><!---->
+                                    <div><h2 class="h2 box-center">Nhập từ nghe được</h2> <input tabindex="0"
+                                                                                                 autofocus="autofocus"
+                                                                                                 class="form-control max-w listen-input text-primary">
+                                    </div>
+                                    <div class="row"><h2 class="h2 box-center"><span>example 1</span> <span
+                                            class="text-primary">...</span> <!----></h2></div>
+                                </div>
+                            </div>
+                        </div> <!---->
+                        <div class="row footer mb-3 d-only">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div class="custom-control custom-checkbox mb-3"><input type="checkbox"
+                                                                                                id="audioCheckbox"
+                                                                                                class="custom-control-input">
+                                            <label for="audioCheckbox" class="custom-control-label"><i
+                                                    class="ni ni-headphones"></i> Âm thanh</label></div>
+                                        <span class="mr-3"><span
+                                                class="badge badge-pill badge-info">Alt</span>: Phát âm</span>
+                                        <!----> <span class="mr-3"><span
+                                            class="badge badge-pill badge-info mr-2">Enter</span>: Trả lời</span>
+                                        <!----></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <button disabled="disabled" class="btn btn-primary btn-round w-80 max-w"><i
+                                                class="fas fa-check"></i> Kiểm tra
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio">
+                            <audio controls="controls" style="display: none;">
+                                <source type="audio/mpeg"
+                                        src="blob:http://engo.local/7cfdeaba-d245-4ddd-bdac-ce8133efc2a3">
+                            </audio>
+                        </div> <!----></div>
+                    <div class="sound">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-6@md">
+            <div id="app2" class="stats-card bg radius-md padding-md shadow-xs">
+                <div class="main-content fullscreen"><!---->
+                    <div class="progress">
+                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                             class="progress-bar bg-primary" style="width: 0%;"></div>
+                    </div>
+                    <div class="">
+                        <div class="row flip mb-7 mt-2">
+                            <div class="flip-container" style="width: 100%; height: 200px;">
+                                <div class="flipper" style="height: 200px; width: 100%; transition: all 0.5s ease 0s;">
+                                    <div class="front"
+                                         style="height: 200px; width: 100%; transition: all 0.5s ease 0s;">
+                                        <div>
+                                            <div class="card box-card text-center">
+                                                <div class="card-header"><span title="Phát âm"
+                                                                               class="icon icon-shape rounded-circle text-white bg-gradient-primary"><i
+                                                        class="fas fa-volume-up"></i></span> <span title="Xoay"
+                                                                                                   class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                                                        class="fas fa-redo"></i></span></div>
+                                                <div class="card-body">
+                                                    <div class="text-center"><h1 class="h1">Word 1</h1> <em></em>
+                                                        <p><em></em></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back" style="height: 200px; width: 100%; transition: all 0.5s ease 0s;">
+                                        <div>
+                                            <div class="card box-card text-center">
+                                                <div class="card-header"><span title="Phát âm"
+                                                                               class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                                                        class="fas fa-volume-up"></i></span> <span title="Xoay"
+                                                                                                   class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                                                        class="fas fa-redo"></i></span></div>
+                                                <div class="card-body">
+                                                    <div class="text-center"><h1 class="h1">Từ vựng 1</h1>
+                                                        <p>Example 1</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!----> <!---->
+                        <div class="row footer mb-3 d-only">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div class="custom-control custom-checkbox mb-3"><input type="checkbox"
+                                                                                                id="audioCheckbox"
+                                                                                                class="custom-control-input">
+                                            <label for="audioCheckbox" class="custom-control-label"><i
+                                                    class="ni ni-headphones"></i> Âm thanh</label></div>
+                                        <span class="mr-3"><span
+                                                class="badge badge-pill badge-info">Alt</span>: Phát âm</span>
+                                        <span class="mr-3"><span class="badge badge-pill badge-info mr-2">Space</span>: Xoay thẻ</span>
+                                        <!----> <span class="mr-3"><span
+                                            class="badge badge-pill badge-info mr-2">Enter</span>: Tiếp tục</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div>
+                                            <button class="btn btn-info btn-round w-80 max-w"><i
+                                                    class="fas fa-caret-right"></i>
+                                                Tiếp tục
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio">
+                            <audio controls="controls" style="display: none;">
+                                <source type="audio/mpeg"
+                                        src="blob:http://engo.local/7cfdeaba-d245-4ddd-bdac-ce8133efc2a3">
+                            </audio>
+                        </div> <!----></div>
+                    <div class="sound">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-6@md">
+            <div id="app3" class="stats-card bg radius-md padding-md shadow-xs">
+                <div class="main-content fullscreen">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 order-1">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-lg-7 text-center pt-lg"><p><img src="/img/brand/logo-blue.png"
+                                                                                    class="img-fluid"
+                                                                                    style="width: 200px;">
+                                    </p>
+                                        <h1 class="h1">111 TỪ VỰNG TIẾNG ANH</h1>
+                                        <p class="lead text-primary">7 Từ vựng</p>
+                                        <div class="btn-wrapper">
+                                            <button type=""
+                                                    class="btn mb-3 mb-sm-0 btn-round btn-icon btn-primary pl-5 pr-5"><span><i
+                                                    class="fas fa-paper-plane"></i> Bắt đầu
+                                </span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!----> <!---->
+                    <div class="sound">
+                        <audio id="success-audio" controls="controls" style="display: none;">
+                            <source src="http://engo.local/audio/success.ogg" type="audio/mpeg">
+                        </audio>
+                        <audio id="failure-audio" controls="controls" style="display: none;">
+                            <source src="http://engo.local/audio/failure.ogg" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6@sm">
+            <div id="app4" class="stats-card bg radius-md padding-md shadow-xs">
+                <div class="main-content fullscreen"><!---->
+                    <div class="progress">
+                        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                             class="progress-bar bg-primary" style="width: 0%;"></div>
+                    </div>
+                    <div class=""><!----> <!---->
+                        <div class="row play">
+                            <div class="card text-center">
+                                <div class="card-header"><span title="Phát âm"
+                                                               class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                                        class="fas fa-volume-up"></i></span> <span class="word h2 ml-2">Word 1</span>
+                                    <em></em></div>
+                                <div class="card-body">
+                                    <div class="w-100">
+                                        <button class="btn btn-answer btn-round w-100 max-w btn-outline-primary"><span
+                                                class="badge badge-pill badge-info d-only mr-2">1</span>
+                                            nên
+                                        </button>
+                                    </div>
+                                    <div class="w-100">
+                                        <button class="btn btn-answer btn-round w-100 max-w btn-outline-primary"><span
+                                                class="badge badge-pill badge-info d-only mr-2">2</span>
+                                            tại sao
+                                        </button>
+                                    </div>
+                                    <div class="w-100">
+                                        <button class="btn btn-answer btn-round w-100 max-w btn-outline-primary"><span
+                                                class="badge badge-pill badge-info d-only mr-2">3</span>
+                                            phần mềm
+                                        </button>
+                                    </div>
+                                    <div class="w-100">
+                                        <button class="btn btn-answer btn-round w-100 max-w btn-outline-primary"><span
+                                                class="badge badge-pill badge-info d-only mr-2">4</span>
+                                            Từ vựng 1
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer mb-3 d-only">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div class="custom-control custom-checkbox mb-3"><input type="checkbox"
+                                                                                                id="audioCheckbox"
+                                                                                                class="custom-control-input">
+                                            <label for="audioCheckbox" class="custom-control-label"><i
+                                                    class="ni ni-headphones"></i> Âm thanh</label></div>
+                                        <span class="mr-3"><span class="badge badge-pill badge-info">Alt</span>: Phát âm</span>
+                                        <!----> <!----> <!----></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <div class="card text-center w-100">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <button disabled="disabled" class="btn btn-primary btn-round w-80 max-w"><i
+                                                class="fas fa-check"></i> Kiểm tra
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio">
+                            <audio controls="controls" style="display: none;">
+                                <source type="audio/mpeg"
+                                        src="blob:http://engo.local/3f7e1389-c6e0-45f5-8eff-f8f0d024bc78">
+                            </audio>
+                        </div> <!----></div>
+                    <div class="sound">
+                        <audio id="success-audio" controls="controls" style="display: none;">
+                            <source src="http://engo.local/audio/success.ogg" type="audio/mpeg">
+                        </audio>
+                        <audio id="failure-audio" controls="controls" style="display: none;">
+                            <source src="http://engo.local/audio/failure.ogg" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="assets/js/scripts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

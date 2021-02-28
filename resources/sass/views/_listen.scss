@@ -1,0 +1,14 @@
+body.listen {
+
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 767px) {
+        .card-header {
+            padding: 10px;
+        }
+        .card-body {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.board {
+    border: dashed 2px #5e72e4;
+    cursor: pointer;
+    color: #172b4d;
+    height: 186px;
+    .card-body {
+        width: 200px;
+        & > div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.show {
+    .card-body p {
+        margin: 0;
+    }
+    .button-group .btn {
+        margin: 5px;
+    }
+    .row hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+
+.tagsinput {
+    transition: all .15s cubic-bezier(.68, -.55, .265, 1.55);
+    color: #8898aa;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 3px 2px rgba(233, 236, 239, .05);
+}
+
+.topic-card {
+    padding-left: 0;
+
+    @media (max-width: 480px) {
+        margin: 0 auto;
+    }
+
+    .card.topic {
+        height: 325px;
+        max-width: 218px;
+        margin-left: 0;
+
+        @media (min-width: 1256px) {
+            margin: 0.5rem !important;
+        }
+
+        .card-body {
+            padding-top: 10px;
+        }
+    }
+}
+
+.topic-box {
+    position: relative;
+    min-height: 200px;
+    text-align: center;
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.last-topic {
+    min-width: 75%;
+}
+
+.import-dialog {
+    .el-dialog__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .inline {
+        width: 50%;
+        margin: 0;
+        float: left;
+        margin-bottom: 30px;
+        label {
+            float: left;
+            text-transform: inherit;
+            padding: 0 12px 0 0;
+            margin-bottom: 0;
+        }
+    }
+    .preview {
+        margin-bottom: 20px;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+    .item {
+        margin-right: 10px;
+    }
+    .el-tag {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .topic-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
+}
+
+.card-topic {
+    .card-footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        background-color: transparent !important;
+        width: 100%;
+        padding: 5px 0 0 !important;
+        border-top: none !important;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .stats.stats-right {
+        line-height: 30px;
+        position: relative;
+    }
+}

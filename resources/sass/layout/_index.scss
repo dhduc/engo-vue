@@ -1,0 +1,22 @@
+.app-wrapper {
+    background: white;
+    font-family: inherit;
+
+    .navbar {
+        //padding: 0;
+    }
+
+    .footer {
+        //background: transparent;
+        padding: 30px 15px;
+    }
+}
+
+#searchForm {
+    .form-control {
+        width: 300px;
+        &::placeholder {
+            text-transform: none;
+        }
+    }
+}

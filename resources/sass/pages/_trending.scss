@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .search-lg {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .search-md {
+        display: none;
+    }
+}
+
+.mobile-none {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-none {
+        display: block;
+    }
+}

@@ -1,0 +1,62 @@
+form {
+  label {
+    text-transform: capitalize;
+  }
+  input {
+    &::-webkit-input-placeholder {
+      text-transform: capitalize;
+    }
+  }
+  .invalid-feedback {
+    display: block;
+  }
+}
+
+.invalid-feedback, span.is-invalid {
+    display: block;
+    margin: 5px 10px;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.custom-checkbox {
+    .invalid-feedback, span.is-invalid {
+        margin: 5px 0;
+    }
+}
+
+.search-form {
+  padding: 1.25rem 1.5rem;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+form {
+    .form-control-label {
+        font-size: 0.8rem;
+    }
+    input.form-control {
+        font-size: 0.8rem;
+        height: calc(2.5rem + 2px);
+        color: #525f7f;
+    }
+    .btn {
+        font-size: 0.8rem;
+        padding: .625rem 1rem;
+    }
+    .custom-file {
+        height: calc(2.5rem + 2px);
+    }
+    .custom-file-label {
+        height: calc(2.5rem + 2px);
+    }
+    .custom-file-label::after {
+        height: 2.5rem;
+    }
+    .custom-file-input {
+        font-size: 0.8rem;
+        height: calc(2.5rem + 2px);
+    }
+}

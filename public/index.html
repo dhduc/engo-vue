@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index.html</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+    <!-- browsers not supporting CSS variables -->
+    <script>
+        if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {
+            var cfStyle = document.getElementById('codyframe');
+            if (cfStyle) {
+                var href = cfStyle.getAttribute('href');
+                href = href.replace('style.css', 'style-fallback.css');
+                cfStyle.setAttribute('href', href);
+            }
+            document.getElementsByTagName("html")[0].className += " ie";
+        }
+    </script>
+    <script src="assets/js/dark-mode.js"></script>
+</head>
+<body>
+<div class="app-ui js-app-ui">
+    <!-- header -->
+
+    <!-- navigation -->
+
+    <!-- main content -->
+    <div id="app"></div>
+</div>
+<script src="assets/js/scripts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
